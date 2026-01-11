@@ -1,13 +1,13 @@
 @echo off
 setlocal
 
-:: Fester Name der EXE
+:: Name of EXE
 set "EXE=(YourGameNameHere).exe"
 
 :: Ordnerpfad der Batch
 set "CURR=%cd%"
 
-:: EXE-Name ohne .exe extrahieren
+:: get name of exe
 for %%A in ("%EXE%") do set "EXE_NAME=%%~nA"
 
 :: Check if exe exists
@@ -35,3 +35,4 @@ powershell -command ^
 
 echo Done!
 pause
+
